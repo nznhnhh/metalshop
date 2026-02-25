@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Магнитогорск Металл Импорт - прямые поставки металла, сэндвич-панелей и комплектующих">
+    <title>Магнитогорск Металл Импорт | Поставка металла и комплектующих</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <h1 class="logo__title">Магнитогорск Металл Импорт</h1>
+                <p class="logo__subtitle">Прямые поставки металла и комплектующих</p>
+            </div>
+            
+            <button class="header__call-btn" id="callBtn">Заказать звонок</button>
+        </div>
+
+        <!-- Основная навигация -->
+        <nav class="navbar">
+            <div class="navbar__container container">
+                <button class="navbar__toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="navbar__menu" id="navMenu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__link">Главная</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__link">О компании</a>
+                    </li>
+                    <li class="navbar__item navbar__item--dropdown">
+                        <a href="#catalog" class="navbar__link navbar__link--dropdown">
+                            Каталог продукции
+                            <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#catalog-panels" class="dropdown-menu__link">Сэндвич-панели</a></li>
+                            <li><a href="#catalog-metal" class="dropdown-menu__link">Металл</a></li>
+                            <li><a href="#catalog-pipes" class="dropdown-menu__link">Трубы</a></li>
+                            <li><a href="#catalog-fittings" class="dropdown-menu__link">Фитинги</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#services" class="navbar__link">Услуги</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#news" class="navbar__link">Новости и акции</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contacts" class="navbar__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <!-- Баннер -->
+        <section class="banner" id="home">
+            <div class="banner__content">
+                <h2 class="banner__title">Надежные поставки металла<br>и комплектующих для вашего бизнеса</h2>
+                <p class="banner__subtitle">Прямые поставки от производителей, конкурентные цены, быстрая доставка</p>
+                <button class="banner__btn">Получить каталог</button>
+            </div>
+            <div class="banner__background"></div>
+        </section>
+
+        <!-- О компании -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">О компании</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>
+                            Товарищество с ограниченной ответственностью "Магнитогорск Металл Импорт" - ведущий поставщик качественного металла и комплектующих на казахстанском рынке. Более 10 лет опыта в работе с промышленными и строительными компаниями.
+                        </p>
+                        <p>
+                            Мы предлагаем прямые поставки от производителей, что позволяет нам обеспечить лучшие цены и гарантировать качество каждого товара. Наш профессиональный коллектив готов помочь вам подобрать оптимальное решение для вашего проекта.
+                        </p>
+                    </div>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <h3 class="stat__number">10+</h3>
+                            <p class="stat__label">лет опыта</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__number">500+</h3>
+                            <p class="stat__label">постоянных клиентов</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__number">2000+</h3>
+                            <p class="stat__label">позиций в каталоге</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat__number">24/7</h3>
+                            <p class="stat__label">поддержка клиентов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="advantages">
+            <div class="container">
+                <h2 class="section-title advantages__title">Наши преимущества</h2>
+                <div class="advantages__grid">
+                    <article class="advantage-card">
+                        <div class="advantage-card__icon">📦</div>
+                        <h3 class="advantage-card__title">Прямые поставки</h3>
+                        <p class="advantage-card__text">Сотрудничаем напрямую с производителями, что обеспечивает лучшие условия и цены</p>
+                    </article>
+                    <article class="advantage-card">
+                        <div class="advantage-card__icon">📚</div>
+                        <h3 class="advantage-card__title">Широкий ассортимент</h3>
+                        <p class="advantage-card__text">Более 2000 позиций в каталоге - всё необходимое для вашего проекта</p>
+                    </article>
+                    <article class="advantage-card">
+                        <div class="advantage-card__icon">💰</div>
+                        <h3 class="advantage-card__title">Конкурентные цены</h3>
+                        <p class="advantage-card__text">Оптимальное соотношение цены и качества без переплат за посредников</p>
+                    </article>
+                    <article class="advantage-card">
+                        <div class="advantage-card__icon">🚚</div>
+                        <h3 class="advantage-card__title">Быстрая доставка</h3>
+                        <p class="advantage-card__text">Доставка по всему Казахстану в кратчайшие сроки</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Слайдер продукции -->
+        <section class="products-slider">
+            <div class="container">
+                <h2 class="section-title">Наша продукция</h2>
+                <div class="slider">
+                    <div class="slider__item">
+                        <img src="OIP.webp" alt="Сэндвич-панели" class="slider__image">
+                        <h3 class="slider__title">Сэндвич-панели</h3>
+                        <p class="slider__price">от 15 000 тг/м²</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="OIP (1).webp" alt="Прокат металла" class="slider__image">
+                        <h3 class="slider__title">Прокат металла</h3>
+                        <p class="slider__price">от 250 тг/кг</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="OIP (2).webp" alt="Трубы" class="slider__image">
+                        <h3 class="slider__title">Трубы стальные</h3>
+                        <p class="slider__price">от 300 тг/кг</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="загрузка.webp" alt="Фитинги" class="slider__image">
+                        <h3 class="slider__title">Фитинги и комплектующие</h3>
+                        <p class="slider__price">по запросу</p>
+                    </div>
+                </div>
+                <div class="slider__controls">
+                    <button class="slider__btn slider__btn--prev" id="sliderPrev">← Назад</button>
+                    <button class="slider__btn slider__btn--next" id="sliderNext">Вперед →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Прайс-листы и скачивание -->
+        <section class="price-lists">
+            <div class="container">
+                <h2 class="section-title">Скачать прайс-листы</h2>
+                <p class="price-lists__subtitle">Выберите интересующую вас категорию и скачайте актуальный прайс-лист в формате PDF</p>
+                <div class="price-lists__grid">
+                    <div class="price-list-card">
+                        <div class="price-list-card__icon">📋</div>
+                        <h3 class="price-list-card__title">Прайс-лист: Сэндвич-панели</h3>
+                        <p class="price-list-card__desc">Сэндвич-панели стеновые и кровельные с таблицами характеристик</p>
+                        <button class="btn btn--secondary" data-file="sandwich-panels">
+                            📥 Скачать PDF
+                        </button>
+                    </div>
+                    <div class="price-list-card">
+                        <div class="price-list-card__icon">📋</div>
+                        <h3 class="price-list-card__title">Прайс-лист: Прокат металла</h3>
+                        <p class="price-list-card__desc">Полный каталог металла: арматура, катанка, швеллер, балки и уголки</p>
+                        <button class="btn btn--secondary" data-file="metal">
+                            📥 Скачать PDF
+                        </button>
+                    </div>
+                    <div class="price-list-card">
+                        <div class="price-list-card__icon">📋</div>
+                        <h3 class="price-list-card__title">Прайс-лист: Трубы стальные</h3>
+                        <p class="price-list-card__desc">Трубы водогазопроводные, электросварные, профильные и оцинкованные</p>
+                        <button class="btn btn--secondary" data-file="pipes">
+                            📥 Скачать PDF
+                        </button>
+                    </div>
+                    <div class="price-list-card">
+                        <div class="price-list-card__icon">📋</div>
+                        <h3 class="price-list-card__title">Прайс-лист: Фитинги</h3>
+                        <p class="price-list-card__desc">Задвижки, вентили, клапаны, затворы и комплектующие</p>
+                        <button class="btn btn--secondary" data-file="fittings">
+                            📥 Скачать PDF
+                        </button>
+                    </div>
+                    <div class="price-list-card">
+                        <div class="price-list-card__icon">📋</div>
+                        <h3 class="price-list-card__title">Полный каталог</h3>
+                        <p class="price-list-card__desc">Все позиции в одном файле со сводной информацией и контактами</p>
+                        <button class="btn btn--primary" data-file="full-catalog">
+                            📥 Скачать PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Каталог продукции -->
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <h2 class="section-title">Каталог продукции</h2>
+                
+                <!-- Сэндвич-панели -->
+                <article class="catalog-section" id="catalog-panels">
+                    <h3 class="catalog-section__title">Сэндвич-панели</h3>
+                    <div class="catalog-section__content">
+                        <div class="subsection">
+                            <h4 class="subsection__title">Стеновые сэндвич-панели</h4>
+                            <div class="characteristics-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Тип</th>
+                                            <th>Толщина (мм)</th>
+                                            <th>Теплопроводность (Вт/м·К)</th>
+                                            <th>Цена (тг/м²)</th>
+                                            <th>Заказать</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>PIR изоляция</td>
+                                            <td>50</td>
+                                            <td>0.021</td>
+                                            <td>15 500</td>
+                                            <td><button class="btn btn--small">В корзину</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PIR изоляция</td>
+                                            <td>100</td>
+                                            <td>0.021</td>
+                                            <td>22 000</td>
+                                            <td><button class="btn btn--small">В корзину</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Минвата</td>
+                                            <td>50</td>
+                                            <td>0.035</td>
+                                            <td>12 500</td>
+                                            <td><button class="btn btn--small">В корзину</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Минвата</td>
+                                            <td>100</td>
+                                            <td>0.035</td>
+                                            <td>18 000</td>
+                                            <td><button class="btn btn--small">В корзину</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="subsection">
+                            <h4 class="subsection__title">Кровельные сэндвич-панели</h4>
+                            <div class="characteristics-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Тип</th>
+                                            <th>Толщина (мм)</th>
+                                            <th>Теплопроводность (Вт/м·К)</th>
+                                            <th>Цена (тг/м²)</th>
+                                            <th>Заказать</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>PIR изоляция</td>
+                                            <td>75</td>
+                                            <td>0.021</td>
+                                            <td>18 500</td>
+                                            <td><button class="btn btn--small">В корзину</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PIR изоляция</td>
+                                            <td>150</td>
+                                            <td>0.021</td>
+                                            <td>28 000</td>
+                                            <td><button class="btn btn--small">В корзину</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Минвата</td>
+                                            <td>75</td>
+                                            <td>0.035</td>
+                                            <td>15 000</td>
+                                            <td><button class="btn btn--small">В корзину</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Минвата</td>
+                                            <td>150</td>
+                                            <td>0.035</td>
+                                            <td>23 500</td>
+                                            <td><button class="btn btn--small">В корзину</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Металл -->
+                <article class="catalog-section" id="catalog-metal">
+                    <h3 class="catalog-section__title">Металл</h3>
+                    <div class="catalog-section__content">
+                        <div class="products-grid">
+                            <div class="product-item">
+                                <h4 class="product-item__name">Арматура</h4>
+                                <p class="product-item__description">Стальная арматура для железобетонных конструкций</p>
+                                <p class="product-item__price">от 250 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Катанка</h4>
+                                <p class="product-item__description">Стальная катанка различных диаметров</p>
+                                <p class="product-item__price">от 270 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Проволока</h4>
+                                <p class="product-item__description">Вязальная и техническая проволока</p>
+                                <p class="product-item__price">от 280 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Квадрат</h4>
+                                <p class="product-item__description">Профилированная сталь квадратного сечения</p>
+                                <p class="product-item__price">от 260 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Полоса</h4>
+                                <p class="product-item__description">Плоская прокатная сталь</p>
+                                <p class="product-item__price">от 255 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Швеллер</h4>
+                                <p class="product-item__description">П-образный профиль для строительства</p>
+                                <p class="product-item__price">от 290 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Балки</h4>
+                                <p class="product-item__description">Стальные двутавровые балки</p>
+                                <p class="product-item__price">от 295 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Уголки</h4>
+                                <p class="product-item__description">Стальные уголки равнополочные и неравнополочные</p>
+                                <p class="product-item__price">от 265 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Листы</h4>
+                                <p class="product-item__description">Стальные листы различной толщины</p>
+                                <p class="product-item__price">от 240 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Трубы -->
+                <article class="catalog-section" id="catalog-pipes">
+                    <h3 class="catalog-section__title">Трубы</h3>
+                    <div class="catalog-section__content">
+                        <div class="products-grid">
+                            <div class="product-item">
+                                <h4 class="product-item__name">Водогазопроводные трубы</h4>
+                                <p class="product-item__description">ГОСТ 3262-75, размеры Ду15-Ду50</p>
+                                <p class="product-item__price">от 320 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Электросварные трубы</h4>
+                                <p class="product-item__description">Общего назначения, продольного сварки</p>
+                                <p class="product-item__price">от 310 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Бесшовные трубы</h4>
+                                <p class="product-item__description">Горячекатаные, холоднокатаные</p>
+                                <p class="product-item__price">от 350 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Профильные трубы</h4>
+                                <p class="product-item__description">Квадратные и прямоугольные сечения</p>
+                                <p class="product-item__price">от 330 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Оцинкованные трубы</h4>
+                                <p class="product-item__description">Защита от коррозии, долговечность</p>
+                                <p class="product-item__price">от 380 тг/кг</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Фитинги -->
+                <article class="catalog-section" id="catalog-fittings">
+                    <h3 class="catalog-section__title">Фитинги и комплектующие</h3>
+                    <div class="catalog-section__content">
+                        <div class="products-grid">
+                            <div class="product-item">
+                                <h4 class="product-item__name">Задвижки</h4>
+                                <p class="product-item__description">Плоскошпиндельные, клиновые задвижки ГОСТ 5698</p>
+                                <p class="product-item__price">по запросу</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Вентили</h4>
+                                <p class="product-item__description">Запорно-регулирующие вентили ду15-ду300</p>
+                                <p class="product-item__price">по запросу</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Клапаны</h4>
+                                <p class="product-item__description">Обратные, предохранительные, редукционные</p>
+                                <p class="product-item__price">по запросу</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                            <div class="product-item">
+                                <h4 class="product-item__name">Затворы</h4>
+                                <p class="product-item__description">Шаровые затворы, дисковые затворы</p>
+                                <p class="product-item__price">по запросу</p>
+                                <button class="btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="section-title">Услуги</h2>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">🏋️</div>
+                        <h3 class="service-card__title">Погрузка</h3>
+                        <p class="service-card__description">
+                            Профессиональная погрузка товара с использованием современного оборудования. Страховка и надежная фиксация груза.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">🚚</div>
+                        <h3 class="service-card__title">Доставка</h3>
+                        <p class="service-card__description">
+                            Доставка по всему Казахстану. Собственный автопарк, возможность отправки железнодорожным транспортом, договор страховки.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">👨‍💼</div>
+                        <h3 class="service-card__title">Консультации</h3>
+                        <p class="service-card__description">
+                            Бесплатные консультации специалистов по подбору материалов, расчету нужного количества, решению технических вопросов.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card__icon">🚂</div>
+                        <h3 class="service-card__title">Формирование ж/д вагонов</h3>
+                        <p class="service-card__description">
+                            Помощь в подборе товара и формировании сборных железнодорожных вагонов для оптимизации логистики.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новости и акции -->
+        <section class="news" id="news">
+            <div class="container">
+                <h2 class="section-title">Новости и акции</h2>
+                <div class="news__grid">
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">25</span>
+                            <span class="news-card__month">Фев</span>
+                        </div>
+                        <div class="news-card__content">
+                            <h3 class="news-card__title">Акция на сэндвич-панели</h3>
+                            <p class="news-card__text">
+                                Скидка 15% на все виды сэндвич-панелей при заказе от 500 м². Предложение действительно до конца месяца!
+                            </p>
+                            <a href="#" class="news-card__link">Подробнее →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">20</span>
+                            <span class="news-card__month">Фев</span>
+                        </div>
+                        <div class="news-card__content">
+                            <h3 class="news-card__title">Расширение ассортимента трубной продукции</h3>
+                            <p class="news-card__text">
+                                В каталоге появились новые размеры профильных труб от европейских производителей. Доступны трубы от 20х20 до 500х500.
+                            </p>
+                            <a href="#" class="news-card__link">Подробнее →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">15</span>
+                            <span class="news-card__month">Фев</span>
+                        </div>
+                        <div class="news-card__content">
+                            <h3 class="news-card__title">Новая служба логистики</h3>
+                            <p class="news-card__text">
+                                Запущена собственная служба логистики. Теперь мы гарантируем доставку в Алматы за 2-3 дня, в регионы за 5-7 дней.
+                            </p>
+                            <a href="#" class="news-card__link">Подробнее →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">10</span>
+                            <span class="news-card__month">Фев</span>
+                        </div>
+                        <div class="news-card__content">
+                            <h3 class="news-card__title">Специальное предложение для постоянных клиентов</h3>
+                            <p class="news-card__text">
+                                Повышаем льготы постоянным клиентам. При закупках на сумму более 1 млн тг - скидка 10% + бесплатная доставка.
+                            </p>
+                            <a href="#" class="news-card__link">Подробнее →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <article class="contact-item">
+                            <h3 class="contact-item__title">📍 Адрес</h3>
+                            <p class="contact-item__text">
+                                Товарищество с ограниченной ответственностью "Магнитогорск Металл Импорт"<br>
+                                Республика Казахстан, Алматинская обл., г. Каскелен<br>
+                                Жазира 5/3, офис 35
+                            </p>
+                        </article>
+
+                        <article class="contact-item">
+                            <h3 class="contact-item__title">📞 Телефон</h3>
+                            <p class="contact-item__text">
+                                <a href="tel:+77075545148">+7 (707) 554 51 48</a>
+                            </p>
+                        </article>
+
+                        <article class="contact-item">
+                            <h3 class="contact-item__title">✉️ Email</h3>
+                            <p class="contact-item__text">
+                                <a href="mailto:Magnitogorsk.Metall.Import@mail.ru">Magnitogorsk.Metall.Import@mail.ru</a>
+                            </p>
+                        </article>
+
+                        <article class="contact-item">
+                            <h3 class="contact-item__title">🕒 Режим работы</h3>
+                            <p class="contact-item__text">
+                                Понедельник-Пятница: 08:30 - 17:30<br>
+                                Суббота: выходной<br>
+                                Воскресенье: выходной
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="contacts__form-section">
+                        <h3 class="contacts__form-title">Форма обратной связи</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-group__label">Ваше имя</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-group__input" 
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-group__label">Телефон</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    class="form-group__input" 
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-group__label">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-group__input" 
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-group__label">Тема обращения</label>
+                                <select id="subject" name="subject" class="form-group__input" required>
+                                    <option value="">-- Выберите тему --</option>
+                                    <option value="question">Вопрос о товаре</option>
+                                    <option value="offer">Коммерческое предложение</option>
+                                    <option value="consultation">Консультация</option>
+                                    <option value="complaint">Претензия</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-group__label">Сообщение</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form-group__input form-group__textarea" 
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="contacts__map">
+                    <h3 class="contacts__map-title">Найти нас на карте</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.0337881627883!2d60.47288!3d53.40551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e990a1c1c1c1c1%3A0x1c1c1c1c1c1c1c1c!2z0YPQu9C80LDRgtGD0YDQsNC80L3QsCwg0YPQu9C80LDRgtGD0YDQsNC80L3QsCDQndCb0LsNCjA0YQ!5e0!3m2!1sru!2skz!4v1234567890" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <section class="footer__section">
+                    <h4 class="footer__title">О компании</h4>
+                    <nav class="footer__nav">
+                        <a href="#home" class="footer__link">Главная</a>
+                        <a href="#about" class="footer__link">О компании</a>
+                        <a href="#catalog" class="footer__link">Каталог</a>
+                        <a href="#services" class="footer__link">Услуги</a>
+                    </nav>
+                </section>
+
+                <section class="footer__section">
+                    <h4 class="footer__title">Каталог</h4>
+                    <nav class="footer__nav">
+                        <a href="#catalog-panels" class="footer__link">Сэндвич-панели</a>
+                        <a href="#catalog-metal" class="footer__link">Металл</a>
+                        <a href="#catalog-pipes" class="footer__link">Трубы</a>
+                        <a href="#catalog-fittings" class="footer__link">Фитинги</a>
+                    </nav>
+                </section>
+
+                <section class="footer__section">
+                    <h4 class="footer__title">Информация</h4>
+                    <nav class="footer__nav">
+                        <a href="#news" class="footer__link">Новости</a>
+                        <a href="#contacts" class="footer__link">Контакты</a>
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__link">Условия использования</a>
+                    </nav>
+                </section>
+
+                <section class="footer__section">
+                    <h4 class="footer__title">Реквизиты</h4>
+                    <div class="footer__requisites">
+                        <p><strong>БИН:</strong> 181040033886</p>
+                        <p><strong>ИИК:</strong> KZ65722S000001656887</p>
+                        <p><strong>БИК:</strong> CASPKZKA</p>
+                        <p><strong>КБЕ:</strong> 17</p>
+                        <p><strong>Банк / филиал:</strong> Филиал в АО "Kaspi Bank" в г. Алматы</p>
+                    </div>
+                </section>
+
+                <section class="footer__section">
+                    <h4 class="footer__title">Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                        <a href="#" class="social-link" aria-label="Telegram">✈️</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 Товарищество с ограниченной ответственностью "Магнитогорск Металл Импорт". Все права защищены.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для заказа звонка -->
+    <div class="modal" id="callModal">
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose">&times;</button>
+            <h2 class="modal__title">Заказать звонок</h2>
+            <form class="modal__form" id="callForm">
+                <div class="form-group">
+                    <label for="modalName" class="form-group__label">Ваше имя</label>
+                    <input 
+                        type="text" 
+                        id="modalName" 
+                        name="name" 
+                        class="form-group__input" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="modalPhone" class="form-group__label">Ваш телефон</label>
+                    <input 
+                        type="tel" 
+                        id="modalPhone" 
+                        name="phone" 
+                        class="form-group__input" 
+                        required
+                    >
+                </div>
+
+                <p class="modal__note">
+                    Наш менеджер позвонит вам в течение 15 минут
+                </p>
+
+                <button type="submit" class="btn btn--primary">Получить звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для подробной информации о продукте -->
+    <div class="modal" id="productModal">
+        <div class="modal__content modal__content--large">
+            <button class="modal__close" id="productModalClose">&times;</button>
+            <div class="product-details">
+                <div class="product-details__header">
+                    <h2 class="product-details__title" id="productTitle"></h2>
+                    <span class="product-details__price" id="productPrice"></span>
+                </div>
+                
+                <div class="product-details__body">
+                    <div class="product-details__image">
+                        <div class="product-details__image-placeholder" id="productImage">📦</div>
+                    </div>
+                    
+                    <div class="product-details__info">
+                        <h3 class="product-details__section-title">Описание</h3>
+                        <p class="product-details__description" id="productDescription"></p>
+                        
+                        <h3 class="product-details__section-title">Характеристики</h3>
+                        <ul class="product-details__specs" id="productSpecs"></ul>
+                        
+                        <h3 class="product-details__section-title">Стандарты и сертификаты</h3>
+                        <p class="product-details__standards" id="productStandards"></p>
+                        
+                        <div class="product-details__actions">
+                            <button class="btn btn--primary" id="productOrderBtn">Заказать</button>
+                            <button class="btn btn--secondary" id="productDownloadBtn">Скачать спецификацию</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
